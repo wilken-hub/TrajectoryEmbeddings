@@ -1,9 +1,9 @@
 # Trajectory Embedding Similarity
-Pipeline para Avaliação de Similaridade Espacial entre Trajetórias usando Embeddings obtidos via abordagens PLN (Processamento de Linguagem Natural). Para o treino dessas abordagens e obtenção dos embeddings, utilizamos como referência a mesma grade espacial do trabalho t2vec. Já para o cálculo de similaridade envolvendo métodos clássicos, utilizamos os dados brutos (lon, lat) das trajetórias.
+Pipeline for Assessing Spatial Similarity between Trajectories using Embeddings obtained via NLP (Natural Language Processing) approaches. To train these approaches and obtain the embeddings, we used the same spatial grid as the t2vec work as a reference. For the similarity calculation involving classical methods, we use the raw data (lon, lat) of the trajectories.
 
-Os modelos de PLN, assim como o t2vec, necessitam das trajetórias em formato sequencial de células para que possam ser treinados. Desta forma, inicialmente, treinamos o modelo t2vec a fim de obter a mesma grade espacial para o treinamento dos modelos de linguagem (Word2Vec, DOc2Vec e BERT).
+PLN models, like t2vec, require trajectories in sequential cell format so that they can be trained. Thus, initially, we trained the t2vec model in order to obtain the same spatial grid for training the language models (Word2Vec, DOc2Vec and BERT).
 
-Quanto aos métodos clássicos de similaridade espacial entre trajetórias (EDR, DTW e LCSS), foram utilizadas as trajetórias reais (trajetos constituídos por pontos geoespaciais). Na execução de tais métodos, iniciamos primeiramente pelo notebook do método EDR, pois nele há o código necessário para processo inicial desses dados de GPS. Uma vez executado o notebook do EDR, as trajetórias processadas podem ser utilizadas diretamente pelo outros dois métodos (DTW e LCSS).
+As for the classical methods of spatial similarity between trajectories (EDR, DTW and LCSS), real trajectories were used (paths made up of geospatial points). When executing such methods, we first start with the EDR method notebook, as it contains the necessary code for the initial processing of this GPS data. Once the EDR notebook is executed, the processed trajectories can be used directly by the other two methods (DTW and LCSS).
 
 NOTE: It is important that language models use the same /data directory created by t2vec!
 

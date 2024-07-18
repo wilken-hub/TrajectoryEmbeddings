@@ -5,6 +5,8 @@ Os modelos de PLN, assim como o t2vec, necessitam das trajetórias em formato se
 
 Quanto aos métodos clássicos de similaridade espacial entre trajetórias (EDR, DTW e LCSS), foram utilizadas as trajetórias reais (trajetos constituídos por pontos geoespaciais). Na execução de tais métodos, iniciamos primeiramente pelo notebook do método EDR, pois nele há o código necessário para processo inicial desses dados de GPS. Uma vez executado o notebook do EDR, as trajetórias processadas podem ser utilizadas diretamente pelo outros dois métodos (DTW e LCSS).
 
+NOTE: It is important that language models use the same /data directory created by t2vec!
+
 ## Used libraries:
 Gensim 4.2.0 <br/>
 Python 3.8.10 <br/>
